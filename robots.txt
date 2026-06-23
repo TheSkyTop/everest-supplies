@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://everestsupplies.com.au/sitemap.xml

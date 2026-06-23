@@ -39,12 +39,17 @@ const zhTranslations = {
   "Industries": "行业领域",
   "Projects": "项目案例",
   "Contact": "联系我们",
+  "Industrial Supplies | Procurement | Commercial Supply": "工业用品 | 采购 | 商业供应",
+  "Industrial Supply & Procurement Solutions Across Australia": "覆盖澳大利亚的工业供应与采购解决方案",
+  "Melbourne-based industrial supplier supporting Australian businesses with commercial supplies, construction supplies, workplace consumables and supply chain solutions.": "位于墨尔本的工业供应商，为澳大利亚企业提供商业用品、建筑用品、工作场所消耗品和供应链解决方案支持。",
   "International Trade | Import & Export | Procurement": "国际贸易 | 进出口 | 采购",
   "Global Trade. Trusted Supply.": "全球贸易，可信供应。",
   "Connecting businesses worldwide through professional sourcing, procurement, logistics coordination and commercial supply chain support.": "通过专业寻源、采购、物流协调和商业供应链支持，连接全球企业。",
   "Request a Quote": "获取报价",
   "Explore Services": "了解服务",
   "Company Positioning": "公司定位",
+  "Australian business supply partner for industrial and commercial customers.": "面向工业与商业客户的澳大利亚企业供应合作伙伴。",
+  "Everest Supplies is a Melbourne, Victoria based industrial and commercial supply company supporting manufacturing, construction, warehousing, logistics, infrastructure and commercial customers across Australia. We help businesses source industrial products, construction supplies, workplace consumables, safety products and procurement solutions through practical supplier coordination and commercial supply chain support.": "Everest Supplies 是一家位于澳大利亚维多利亚州墨尔本的工业与商业供应公司，服务制造、建筑、仓储、物流、基础设施和商业客户。我们帮助企业采购工业产品、建筑用品、工作场所消耗品、安全产品和采购解决方案。",
   "Connecting global markets through reliable trade solutions.": "通过可靠的贸易解决方案连接全球市场。",
   "Everest Supplies Australia is a diversified international trading and supply chain company headquartered in Melbourne, Australia. We support businesses with end-to-end import, export, procurement, logistics coordination and commercial consulting services across multiple industries.": "Everest Supplies Australia 是一家总部位于澳大利亚墨尔本的多元化国际贸易与供应链公司。我们为多个行业的企业提供端到端的进口、出口、采购、物流协调和商业咨询服务。",
   "Global": "全球网络",
@@ -55,8 +60,17 @@ const zhTranslations = {
   "Trade capability across industries": "跨行业贸易服务能力",
   "Long-term": "长期合作",
   "Partnership-focused delivery": "以长期合作为导向的交付",
+  "Industrial Supplies": "工业用品",
+  "Construction Materials": "建筑材料",
+  "Workplace Consumables": "工作场所消耗品",
+  "Warehouse & Logistics Supplies": "仓储与物流用品",
+  "Safety & PPE Products": "安全与 PPE 产品",
+  "Procurement & Sourcing Services": "采购与寻源服务",
+  "Supply Chain Solutions": "供应链解决方案",
   "About Us": "关于我们",
   "Professional sourcing, procurement and market access from Australia.": "立足澳大利亚的专业寻源、采购与市场连接服务。",
+  "Everest Supplies Australia is a privately owned industrial and commercial supply company headquartered in Melbourne, Victoria, Australia, focused on supporting business customers through trusted sourcing, procurement and supply coordination.": "Everest Supplies Australia 是一家总部位于澳大利亚维多利亚州墨尔本的私营工业与商业供应公司，专注于通过可信赖的寻源、采购和供应协调支持企业客户。",
+  "Operating from Australia, we assist qualified suppliers and commercial buyers with industrial procurement, workplace consumables, construction materials, documentation and commercial transparency throughout the supply chain.": "我们从澳大利亚出发，为合格供应商和商业买家提供工业采购、工作场所消耗品、建筑材料、文件管理和供应链商业透明度支持。",
   "Everest Supplies Australia is a privately owned international trading company headquartered in Melbourne, Australia, focused on facilitating global commerce through trusted sourcing, procurement, import and export solutions.": "Everest Supplies Australia 是一家总部位于澳大利亚墨尔本的私营国际贸易公司，专注于通过可信赖的寻源、采购、进口和出口解决方案促进全球商业往来。",
   "Operating from Australia, we connect qualified suppliers with commercial buyers while supporting logistics, quality assurance, documentation and commercial transparency throughout the supply chain.": "我们从澳大利亚出发，连接合格供应商与商业买家，并在整个供应链中提供物流、质量保证、文件管理和商业透明度支持。",
   "Mission": "使命",
@@ -149,8 +163,8 @@ const zhTranslations = {
 };
 
 const originalTextNodes = new WeakMap();
-const translatedTitle = "Everest Supplies Australia | 全球贸易与供应链解决方案";
-const translatedDescription = "Everest Supplies Australia 提供国际贸易、进口、出口、采购和供应链管理解决方案。";
+const translatedTitle = "Everest Supplies | 澳大利亚工业用品与采购解决方案";
+const translatedDescription = "Everest Supplies 为澳大利亚企业提供工业用品、建筑材料、工作场所消耗品、安全产品和采购解决方案。";
 
 function translateTextValue(value, language) {
   const trimmed = value.trim();
@@ -165,12 +179,12 @@ function applyLanguage(language) {
   currentLanguage = language;
   setStoredLanguage(language);
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-  document.title = language === "zh" ? translatedTitle : "Everest Supplies Australia | Global Trade & Supply Chain Solutions";
+  document.title = language === "zh" ? translatedTitle : "Everest Supplies | Industrial Supplies & Procurement Solutions Australia";
   document.querySelector("meta[name='description']").setAttribute(
     "content",
     language === "zh"
       ? translatedDescription
-      : "Everest Supplies Australia provides international trade, import, export, procurement and supply chain management solutions."
+      : "Everest Supplies provides industrial supplies, construction materials, workplace consumables, safety products and procurement solutions for Australian businesses."
   );
 
   const textNodes = [];

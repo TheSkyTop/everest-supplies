@@ -1,0 +1,49 @@
+.seo-page {
+  min-height: 100vh;
+  padding: 132px 22px 64px;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(53, 185, 223, 0.12), transparent 28%),
+    linear-gradient(180deg, #f5fbff 0%, #eaf4fa 100%);
+  color: #0c2238;
+  font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+}
+
+.seo-page main {
+  width: min(980px, 100%);
+  margin: 0 auto;
+}
+
+.seo-page article {
+  padding: clamp(28px, 4vw, 48px);
+  border: 1px solid rgba(185, 211, 225, 0.78);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 50px rgba(7, 48, 82, 0.12);
+}
+
+.seo-page h1 {
+  margin: 0 0 18px;
+  color: #102a42;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.06;
+}
+
+.seo-page p {
+  color: #49657c;
+  font-size: clamp(17px, 1.35vw, 19px);
+  line-height: 1.72;
+}
+
+.seo-page ul {
+  color: #49657c;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.seo-page .back-link {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: #0b426b;
+  font-weight: 650;
+  text-decoration: none;
+}

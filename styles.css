@@ -375,7 +375,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-bottom: clamp(74px, 8vw, 112px);
+  margin-bottom: 24px;
 }
 
 .stats article,
@@ -405,6 +405,41 @@ h3 {
   color: var(--muted);
   font-size: 16px;
   font-weight: 800;
+}
+
+.seo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.seo-links a {
+  padding: 9px 12px;
+  border: 1px solid rgba(185, 211, 225, 0.78);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  color: #294c68;
+  font-size: 14px;
+  font-weight: 560;
+  text-decoration: none;
+}
+
+.seo-links a:hover {
+  color: #0b426b;
+  border-color: rgba(53, 185, 223, 0.55);
+}
+
+.eeat-note {
+  margin-bottom: clamp(74px, 8vw, 112px);
+}
+
+.eeat-note p {
+  max-width: 980px;
+  margin: 0;
+  color: #49657c;
+  font-size: clamp(16px, 1.2vw, 18px);
+  line-height: 1.72;
 }
 
 .section {
